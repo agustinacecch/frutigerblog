@@ -1,0 +1,323 @@
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root{
+
+    /* Colores */
+
+    --bg:#dfeef8;
+
+    --panel:#ffffff;
+
+    --panel2:#eef8ff;
+
+    --border:#8bc8ff;
+
+    --primary:#2d8cff;
+
+    --secondary:#61d3ff;
+
+    --text:#2b2b2b;
+
+    --shadow:0 8px 18px rgba(0,0,0,.18);
+
+    --radius:18px;
+
+    --transition:.25s;
+
+    /* Espaciados */
+
+    --gap:20px;
+
+    --padding:20px;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #e8f8ff,
+        #d2f0ff,
+        #f4fbff
+    );
+
+    font-family:Verdana, Geneva, sans-serif;
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   CONTENEDOR
+=========================== */
+
+.site{
+
+    width:min(1400px,95%);
+
+    margin:40px auto;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.topbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    border-radius:var(--radius);
+
+    background:var(--panel);
+
+    box-shadow:var(--shadow);
+
+}
+
+.navigation{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.navigation a{
+
+    padding:.6rem 1rem;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+}
+
+.navigation a:hover{
+
+    background:#cfeeff;
+
+}
+
+/* ===========================
+   BUSCADOR
+=========================== */
+
+.search{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.search input{
+
+    width:220px;
+
+    padding:.7rem;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+}
+
+.search button{
+
+    padding:.7rem 1.2rem;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:250px 1fr 250px;
+
+    gap:var(--gap);
+
+}
+
+/* ===========================
+   VENTANAS
+=========================== */
+
+.window{
+
+    background:var(--panel);
+
+    border-radius:var(--radius);
+
+    padding:var(--padding);
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:20px;
+
+}
+
+.window h2{
+
+    margin-bottom:15px;
+
+    font-size:1.05rem;
+
+}
+
+/* ===========================
+   POSTS
+=========================== */
+
+.post{
+
+    background:var(--panel);
+
+    padding:30px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+}
+
+.post header{
+
+    margin-bottom:20px;
+
+}
+
+.post h2{
+
+    margin-bottom:6px;
+
+}
+
+.date{
+
+    font-size:.85rem;
+
+    color:#777;
+
+}
+
+.post img{
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+}
+
+.post p{
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   TAGS
+=========================== */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.tags span{
+
+    padding:.45rem .9rem;
+
+    background:#d9f1ff;
+
+    border-radius:999px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    opacity:.75;
+
+}
